@@ -124,3 +124,45 @@ File Path                          PID    Runtime      # DAGs    # Errors  Last 
 ================================================================================
 [2022-02-12 15:40:07,470] {dag_processing.py:1123} INFO - Finding 'running' jobs without a recent heartbeat
 [2022-02-12 15:40:07,472] {dag_processing.py:1127} INFO - Failing jobs without heartbeat after 2022-02-12 15:35:07.472250+00:00
+[2022-02-12 15:40:17,509] {dag_processing.py:1123} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-02-12 15:40:17,511] {dag_processing.py:1127} INFO - Failing jobs without heartbeat after 2022-02-12 15:35:17.511164+00:00
+[2022-02-12 15:40:27,550] {dag_processing.py:1123} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-02-12 15:40:27,554] {dag_processing.py:1127} INFO - Failing jobs without heartbeat after 2022-02-12 15:35:27.554390+00:00
+[2022-02-12 15:40:27,565] {dag_processing.py:862} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/trigger_rule.py                           1           0  0.15s           2022-02-12T15:40:00
+================================================================================
+[2022-02-12 15:40:37,690] {dag_processing.py:1123} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-02-12 15:40:37,693] {dag_processing.py:1127} INFO - Failing jobs without heartbeat after 2022-02-12 15:35:37.693631+00:00
+[2022-02-12 15:40:47,735] {dag_processing.py:1123} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-02-12 15:40:47,738] {dag_processing.py:1127} INFO - Failing jobs without heartbeat after 2022-02-12 15:35:47.738224+00:00
+[2022-02-12 15:40:57,787] {dag_processing.py:1123} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-02-12 15:40:57,788] {dag_processing.py:1127} INFO - Failing jobs without heartbeat after 2022-02-12 15:35:57.788458+00:00
+[2022-02-12 15:40:57,794] {dag_processing.py:862} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/trigger_rule.py                           1           0  0.11s           2022-02-12T15:40:30
+================================================================================
+[2022-02-12 15:41:07,850] {dag_processing.py:1123} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-02-12 15:41:07,853] {dag_processing.py:1127} INFO - Failing jobs without heartbeat after 2022-02-12 15:36:07.852949+00:00
+[2022-02-12 15:41:17,890] {dag_processing.py:1123} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-02-12 15:41:17,894] {dag_processing.py:1127} INFO - Failing jobs without heartbeat after 2022-02-12 15:36:17.894034+00:00
+[2022-02-12 15:41:27,934] {dag_processing.py:1123} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-02-12 15:41:27,935] {dag_processing.py:1127} INFO - Failing jobs without heartbeat after 2022-02-12 15:36:27.935668+00:00
+[2022-02-12 15:41:27,945] {dag_processing.py:862} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/trigger_rule.py                           1           0  0.11s           2022-02-12T15:41:00
+================================================================================
+[2022-02-12 15:41:37,984] {dag_processing.py:1123} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-02-12 15:41:37,988] {dag_processing.py:1127} INFO - Failing jobs without heartbeat after 2022-02-12 15:36:37.988124+00:00

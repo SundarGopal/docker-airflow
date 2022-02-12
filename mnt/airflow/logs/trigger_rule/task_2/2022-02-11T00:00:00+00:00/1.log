@@ -20,3 +20,7 @@ AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-02-11T00:00:00+00:00
  /tmp
 [2022-02-12 15:39:44,384] {subprocess.py:63} INFO - Running command: ['bash', '-c', 'sleep 90']
 [2022-02-12 15:39:44,395] {subprocess.py:75} INFO - Output:
+[2022-02-12 15:41:14,336] {subprocess.py:83} INFO - Command exited with return code 0
+[2022-02-12 15:41:14,364] {taskinstance.py:1191} INFO - Marking task as SUCCESS. dag_id=trigger_rule, task_id=task_2, execution_date=20220211T000000, start_date=20220212T153944, end_date=20220212T154114
+[2022-02-12 15:41:14,409] {taskinstance.py:1245} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-02-12 15:41:14,458] {local_task_job.py:151} INFO - Task exited with return code 0
