@@ -17,7 +17,7 @@ services:
       ports:
         - '5432:5432'
       volumes: 
-        - ./postgres-data:/var/lib/postgresql/data
+        - ./mnt/postgres/postgres-data:/var/lib/postgresql/data
           # copy the sql script to create tables
           #- ./sql/create_tables.sql:/docker-entrypoint-initdb.d/create_tables.sql
   
@@ -26,18 +26,28 @@ services:
 # AIRFLOW
 ######################################################
 
-  airflow:
+  scheduler:
     #build: ./docker/airflow
     image: sundargopal/yararepo1:airflow
     restart: always
-    container_name: airflow
+    container_name: airflow-scheduler
+    command: scheduler
     volumes:
-      - ./mnt/airflow/airflow.cfg:/opt/airflow/airflow.cfg
       - ./mnt/airflow/dags:/opt/airflow/dags
+    env_file:
+      - .env
+    
+  webserver:
+    #build: ./docker/airflow
+    image: sundargopal/yararepo1:airflow
+    restart: always
+    container_name: airflow-webserver
+    entrypoint: ./scripts/start.sh
+    env_file:
+      - .env
+    volumes:
+      - ./mnt/airflow/dags:/opt/airflow/dags
+      - ./scripts:/opt/airflow/scripts
     ports:
       - 8080:8080
-    healthcheck:
-      test: [ "CMD", "nc", "-z", "airflow", "8080" ]
-      timeout: 45s
-      interval: 10s
-      retries: 10
+
