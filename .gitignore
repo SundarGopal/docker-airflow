@@ -1,2 +1,2 @@
-./mnt/airflow/logs
-./mnt/postgres
+/mnt/airflow/logs
+/mnt/postgres
