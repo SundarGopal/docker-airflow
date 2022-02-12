@@ -42,7 +42,8 @@ USER 1001
 USER root
 RUN  pip install --upgrade pip --user && \
    # useradd -ms /bin/bash -d ${AIRFLOW_HOME} airflow && \
-     pip install  apache-airflow==2.1.0
+     pip install  apache-airflow==2.1.0 && \
+     pip install psycopg2
 
 USER 1001
 # Copy the airflow.cfg file (config)
