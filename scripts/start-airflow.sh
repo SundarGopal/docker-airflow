@@ -1,12 +1,5 @@
 #!/usr/bin/env bash
 
-
-# Move to the AIRFLOW HOME directory
-cd $AIRFLOW_HOME
-
-# Export environement variables
-export AIRFLOW__CORE__LOAD_EXAMPLES=False
-
 # Initiliase the metadatabase
 airflow db init
 
